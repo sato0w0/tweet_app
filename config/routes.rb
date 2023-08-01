@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get 'posts/new'
   get 'posts/:id' => 'posts#show'
   post "posts/create" => "posts#create"
+  get "posts/:id/edit" => "posts#edit"
   get '/' => 'home#top'
   get 'about' => 'home#about'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
