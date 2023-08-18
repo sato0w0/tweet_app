@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   get "users/:id/edit" => "users#edit"
   post "users/:id/update" => "users#update"
 
+  get "login" => "users#login_form"
+
   get "users/index" => "users#index"
   get "users/:id" => "users#show"
   
