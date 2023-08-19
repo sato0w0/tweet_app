@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   post "users/:id/update" => "users#update"
 
   get "login" => "users#login_form"
+  post "login" => "users#login"
 
   get "users/index" => "users#index"
   get "users/:id" => "users#show"
