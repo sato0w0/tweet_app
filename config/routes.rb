@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   get "users/:id" => "users#show"
 
   get "posts/index" => "posts#index"
+  post "likes/:post_id/create" => "likes#create"
   get "posts/new" => "posts#new"
   get "posts/:id" => "posts#show"
   post "posts/create" => "posts#create"
